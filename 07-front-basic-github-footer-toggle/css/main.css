@@ -202,6 +202,11 @@ header .sub-menu li a:hover {
   color: #4078c0;
 }
 
+/* 브라우저가 1024보다 작을때 toggle-btn 햄버거버튼이나 대체텍스트가 안보이게 설정 */
+#toggle-btn{  
+  display: none; 
+}
+
 /* VISUAL */
 .section--visual{
   background-image: url(../img/bg.jpg);
@@ -535,20 +540,24 @@ header .sub-menu{
 }
 
  header .toggle{
-    /* display: none; */
+    display: none;
+  }
+  header .toggle.on { 
+    /* on이라는 클래스명은 존재하지 않지만, js 코드에서 toggle이미지를 마우스 click시, on 클래스명을 붙였다 사라졌다하는 click 이벤트 코드를 작성하여 활용하는 방식 */
+    display: block;
   }
 
-
 #toggle-btn{
+  /* 브라우저가 1024보다 클때 코드에 #toggle-btn이 display: none되게 상단header에 추가하여 */
 display: block;
 background: url("../img/toggle-btn.svg");
 width: 18px;
 height: 24px;
-position: abosolute;
+position: absolute;
 top: 16px;
 right:20px;
 cursor: pointer;
 text-indent: -9999px;
-
   }
+
 }

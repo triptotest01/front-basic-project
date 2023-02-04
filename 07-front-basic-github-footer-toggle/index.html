@@ -40,7 +40,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
   <link rel="stylesheet" href="css/main.css"> 
 
- 
+  <script defer src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -226,13 +227,10 @@
     </svg>
   </a>
 
-
- </div>
+ </div> <!-- footter의 inner 끝! -->
 </footer>
 
-
-
-</div>
+</div><!-- container 끝 ! -->
                                   
 <script> 
 // Initialize and add the map
@@ -252,9 +250,9 @@ function initMap() {
   });
 }
 </script>
-<!-- 키값을넣으세요 -->
-<script async src="https://maps.googleapis.com/maps/api/js?key=키값을넣으세요&callback=initMap" > </script>
 
+  <!-- 주의 : google map api 개인 key값 넣기. key는 git에 업로드하지 않고 따로 보관할것 -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=키값을넣으세요&callback=initMap" > </script>
       
 </body>
 </html>
